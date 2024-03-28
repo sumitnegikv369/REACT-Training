@@ -15,7 +15,6 @@ const Question2 = () => {
         email="david9@gmail.com"
         avatarURL="https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"
       />
-      
     </div>
   )
 }

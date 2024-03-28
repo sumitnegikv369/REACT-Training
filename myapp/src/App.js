@@ -1,16 +1,16 @@
 import React from 'react'
 import { Question1, Question2, Question3 } from './day1'
+import Tag from './day1/components/Tag'
 
 const App = () => {
   return (
     <>
-      <hr />
+      <Tag questionNumber={1} />
       <Question1 />
-      <hr />
+      <Tag questionNumber={2} />
       <Question2 />
-      <hr />
+      <Tag questionNumber={3} />
       <Question3 />
-      <hr />
     </>
   )
 }
