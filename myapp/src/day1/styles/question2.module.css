@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    color: #fff;
+    background-color: #3E4756;
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0px rgba(51, 51, 51, 0.267);
+  }
+
+  .card h1{
+    font-size: 1.75rem;
+  }
+
+.card p{
+    font-size: 1.25rem;
+}
+
+.avatar{
+    border-radius: 50%;
+}
