@@ -10,7 +10,7 @@ const Tag = ({ questionNumber }) => {
         width: 'fit-content',
         margin: '2rem auto 1rem',
         fontSize: '1rem',
-        borderRadius: '8px'
+        borderRadius: '8px',
       }}
     >
       Task {questionNumber}

@@ -1,8 +1,8 @@
 import React from 'react'
-import Weather from './components/Weather'
-import styles from './styles/question3.module.css'
+import Weather from './Weather'
+import styles from './question3.module.css'
 
-const Question3 = () => {
+const index = () => {
   return (
     <div className={styles.weather}>
       <Weather temperature={26} />
@@ -12,7 +12,7 @@ const Question3 = () => {
   )
 }
 
-export default Question3
+export default index
 
 // 3.Create a functional component named Weather that accepts a prop called temperature (a number).
 // Display a message like "It's sunny today!" if the temperature is above 25°C and "It's cold today!" if the temperature is below 10°C.

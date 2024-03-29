@@ -1,8 +1,8 @@
 import React from 'react'
-import Counter from './components/Counter'
-import styles from './styles/question4.module.css'
+import Counter from './Counter'
+import styles from './question4.module.css'
 
-const Question4 = () => {
+const index = () => {
   return (
     <div className={styles.counter}>
       <Counter />
@@ -10,7 +10,7 @@ const Question4 = () => {
   )
 }
 
-export default Question4
+export default index
 
 // 4.Create a functional component named Counter that displays a count and two buttons: "Increment" and "Decrement".
 // Implement event handlers for the "Increment" and "Decrement" buttons to increase and decrease the count.

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/question2.module.css'
+import styles from './question2.module.css'
 
 const UserCard = (props) => {
   const { name, email, avatarURL } = props

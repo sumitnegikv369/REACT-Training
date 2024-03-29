@@ -1,8 +1,8 @@
 import React from 'react'
-import UserCard from './components/UserCard'
-import styles from './styles/question2.module.css'
+import UserCard from './UserCard'
+import styles from './question2.module.css'
 
-const Question2 = () => {
+const index = () => {
   return (
     <div className={styles.container}>
       <UserCard
@@ -19,7 +19,7 @@ const Question2 = () => {
   )
 }
 
-export default Question2
+export default index
 
 // 2.Create a functional component named UserCard that accepts the following props: name, email, and avatarURL.
 // Use the props to display the user's name, email, and an image (avatar) in the UserCard component.
