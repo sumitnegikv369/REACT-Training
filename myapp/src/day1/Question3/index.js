@@ -1,10 +1,10 @@
 import React from 'react'
 import Weather from './Weather'
-import styles from './question3.module.css'
+import './question3.css'
 
 const index = () => {
   return (
-    <div className={styles.weather}>
+    <div className="weather">
       <Weather temperature={26} />
       <Weather temperature={20} />
       <Weather temperature={8} />

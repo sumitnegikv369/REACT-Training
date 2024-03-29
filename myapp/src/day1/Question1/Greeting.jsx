@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Greeting = () => {
-  return <div>Hello, React!</div>
+  return <div className="greeting">Hello, React!</div>
 }
 
 export default Greeting

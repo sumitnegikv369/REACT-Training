@@ -1,5 +1,5 @@
 
-.counter > div{
+.counter{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
     margin: auto;
 }
 
-.counter > div > div{
+.buttons{
     display: flex;
     gap: 1rem;
 }

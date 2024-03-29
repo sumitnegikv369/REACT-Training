@@ -1,15 +1,10 @@
 import React from 'react'
 import Button from './Button'
+import './question6.css'
 
 const Question6 = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        gap: '1rem',
-        justifyContent: 'center',
-      }}
-    >
+    <div className="buttons-container">
       <Button text={'Submit'} color="#1abc9c" />
       <Button text={'Click'} color="#e74c3c" />
       <Button />

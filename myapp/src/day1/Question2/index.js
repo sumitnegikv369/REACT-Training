@@ -1,20 +1,26 @@
 import React from 'react'
 import UserCard from './UserCard'
-import styles from './question2.module.css'
+import './question2.css'
 
 const index = () => {
+  const userInfo = [
+    {
+      name: 'Jouhan',
+      email: 'jouhan@gmail.com',
+      avatarURL:
+        'https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250',
+    },
+    {
+      name: 'David',
+      email: 'david9@gmail.com',
+      avatarURL: 'https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk',
+    },
+  ]
   return (
-    <div className={styles.container}>
-      <UserCard
-        name="Jouhan"
-        email="jouhan@gmail.com"
-        avatarURL="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250"
-      />
-      <UserCard
-        name="David"
-        email="david9@gmail.com"
-        avatarURL="https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"
-      />
+    <div className="cards-container">
+      {userInfo.map((info) => (
+        <UserCard info={info} />
+      ))}
     </div>
   )
 }

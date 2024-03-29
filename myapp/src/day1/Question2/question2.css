@@ -1,4 +1,4 @@
-.container{
+.cards-container{
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -14,14 +14,14 @@
     box-shadow: 2px 4px 4px 0px rgba(51, 51, 51, 0.267);
   }
 
-  .card h1{
+  .card > h1{
     font-size: 1.75rem;
   }
 
-.card p{
+.card > p{
     font-size: 1.25rem;
 }
 
-.avatar{
+.card > .avatar{
     border-radius: 50%;
 }

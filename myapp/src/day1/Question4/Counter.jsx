@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 const Counter = () => {
   const [count, setCount] = useState(0)
   return (
-    <div>
+    <div className="counter">
       <p>Count {count}</p>
-      <div>
+      <div className="buttons">
         <button onClick={() => setCount((count) => count + 1)}>
           Increment
         </button>

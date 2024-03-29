@@ -1,3 +1,9 @@
+.buttons-container{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+}
+
 button {
     color: white;
     padding: 1rem 2rem;
