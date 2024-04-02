@@ -1,6 +1,6 @@
 import React from 'react'
 import Weather from './Weather'
-import './question3.css'
+import './styles.css'
 
 const index = () => {
   return (

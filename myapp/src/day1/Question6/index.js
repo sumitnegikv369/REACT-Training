@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import './question6.css'
+import './styles.css'
 
 const Question6 = () => {
   return (

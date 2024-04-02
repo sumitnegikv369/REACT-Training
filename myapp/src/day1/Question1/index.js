@@ -1,5 +1,5 @@
 import Greeting from './Greeting'
-import './question1.css'
+import './styles.css'
 
 export default Greeting
 

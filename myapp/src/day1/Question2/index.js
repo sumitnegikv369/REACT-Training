@@ -1,6 +1,6 @@
 import React from 'react'
 import UserCard from './UserCard'
-import './question2.css'
+import './styles.css'
 
 const index = () => {
   const userInfo = [
