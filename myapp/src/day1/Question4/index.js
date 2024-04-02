@@ -1,5 +1,4 @@
 import Counter from './Counter'
-import './styles.css'
 
 export default Counter
 

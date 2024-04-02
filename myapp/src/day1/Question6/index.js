@@ -1,6 +1,4 @@
-import React from 'react'
 import Button from './Button'
-import './styles.css'
 
 const Question6 = () => {
   return (

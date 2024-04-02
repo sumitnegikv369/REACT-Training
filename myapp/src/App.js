@@ -1,4 +1,3 @@
-import React from 'react'
 import Assignment1 from './day1/Assignment1'
 
 const App = () => {

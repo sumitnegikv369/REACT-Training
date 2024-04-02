@@ -1,4 +1,4 @@
-import React from 'react'
+import './styles.css'
 
 const Button = ({ text = 'button', color = 'black' }) => {
   return (

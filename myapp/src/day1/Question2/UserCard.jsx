@@ -1,4 +1,4 @@
-import React from 'react'
+import './styles.css'
 
 const UserCard = (props) => {
   const { name, email, avatarURL } = props.info

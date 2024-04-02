@@ -1,5 +1,5 @@
-import React from 'react'
 import styles from './styles.css'
+
 const TaskList = ({ tasks }) => {
   return (
     <ul>

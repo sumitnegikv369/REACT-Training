@@ -1,6 +1,4 @@
-import React from 'react'
 import Weather from './Weather'
-import './styles.css'
 
 const index = () => {
   return (
