@@ -1,0 +1,22 @@
+.random-btn{
+    background-color: coral;
+    text-transform: uppercase;
+    border: 3px dashed #fff;
+    outline: 4px solid red;
+    margin: 1rem;
+}
+
+.random-number{
+    background-color: rgba(75, 75, 75, 0.6);
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #3336;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

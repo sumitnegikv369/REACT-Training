@@ -1,0 +1,26 @@
+.ui{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.ui button{
+    background-color: red;
+    font-size: 0.75rem;
+}
+
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,25 @@
+.todos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todos li{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+    border-radius: 6px;
+    background-color: rgba(100, 148, 237, 0.103);
+}
+
+.todos input[type="checkbox"]{
+    transform: translate(20px);
+    border-radius: 50%;
+}
+
+.todos button{
+    background-color: red;
+    padding: 1rem;
+}

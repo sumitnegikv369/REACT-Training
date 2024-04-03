@@ -1,0 +1,76 @@
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards-container div{
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cards-container h2, .cart div div h2{
+    font-size: 1rem;
+}
+
+.cards-container p, .cart div div p{
+    font-size: 0.75rem;
+    height: 100px;
+    overflow: hidden;
+}
+.cards-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.cards-container button{
+    font-size: 1rem;
+    padding: 0.4rem;
+    background-color: green;
+}
+.cart div div img{
+    width: 100px;
+    height: 100px;
+}
+.cart div div{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid red;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart div{
+    font-size: 1rem;
+    margin: auto;
+    display: flex;
+}
+
+.cart h1{
+    font-size: 2rem;
+}
+
+.cart span{
+    font-size: 1.45rem;
+    color: red;
+}
+
+.cart div div button{
+    background-color: red;
+    font-size: 0.75rem;
+    padding: 0.45rem;
+}

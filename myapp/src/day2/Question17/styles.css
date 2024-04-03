@@ -1,0 +1,31 @@
+.clipboard{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin: auto;
+justify-content: center;
+align-items: center;
+}
+
+.clipboard input{
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.clipboard div{
+    display: flex;
+gap: 1rem;
+margin: auto;
+justify-content: center;
+align-items: center;
+}
+
+.clipboard p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.clipboard div button{
+    background-color: rgb(0, 183, 255);
+}

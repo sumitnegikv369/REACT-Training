@@ -1,0 +1,22 @@
+.task{
+display: flex;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+width: fit-content;
+margin: auto;
+margin-bottom: 1rem;
+}
+
+.task button{
+    background-color: red;
+}
+
+.disable{
+    opacity: 0.6;
+    cursor: none;
+}
+
+.disable button{
+    cursor: none;
+}
