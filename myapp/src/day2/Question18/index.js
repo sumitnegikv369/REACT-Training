@@ -1,4 +1,4 @@
-import UserPreference from "./UserPreference";
+import UserPreference from './UserPreference'
 
 export default UserPreference
 // 18.Design a custom hook named useLocalStorage to interact with local storage.

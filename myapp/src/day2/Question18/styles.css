@@ -2,25 +2,25 @@
 
 }
 
-.preference form{
+.preference section{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.preference form button{
+.preference section button{
     background-color: cornflowerblue;
     width: fit-content;
     margin: auto;
     margin-top: 1rem;
 }
 
-.preference form p{
+.preference section p{
     color: red;
 }
 
-.preference form div{
+.preference section div{
     display: flex;
     justify-content: center;
     align-items: center;

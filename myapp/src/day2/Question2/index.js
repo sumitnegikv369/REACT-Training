@@ -1,4 +1,4 @@
-import PersonForm from "./PersonForm"
+import PersonForm from './PersonForm'
 
 export default PersonForm
 

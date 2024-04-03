@@ -1,4 +1,4 @@
-import{
+import {
   Question1,
   Question2,
   Question3,
@@ -49,23 +49,20 @@ const Assignment2 = () => {
         <Question11 />
         <Tag assignmentNumber={2} questionNumber={12} />
         <Question12 />
-        <Tag assignmentNumber={1} questionNumber={13} />
+        <Tag assignmentNumber={2} questionNumber={13} />
         <Question13 />
-        <Tag assignmentNumber={1} questionNumber={14} />
+        <Tag assignmentNumber={2} questionNumber={14} />
         <Question14 />
-
-        <Tag assignmentNumber={1} questionNumber={17} />
+        <Tag assignmentNumber={2} questionNumber={15} />
+        <Question15 />
+        <Tag assignmentNumber={2} questionNumber={16} />
+        <Question16 />
+        <Tag assignmentNumber={2} questionNumber={17} />
         <Question17 />
         <Tag assignmentNumber={2} questionNumber={18} />
         <Question18 />
         <Tag assignmentNumber={2} questionNumber={19} />
         <Question19 />
-        {/* 
-
-        <Tag assignmentNumber={1} questionNumber={15} />
-        <Question15 />
-        <Tag assignmentNumber={1} questionNumber={16} />
-        <Question16 /> */}
       </div>
     </>
   )

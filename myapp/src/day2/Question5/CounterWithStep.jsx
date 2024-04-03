@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react'
 import './styles.css'
 
 const CounterWithStep = () => {
-  const [value, setValue] = useState(0);
-  const [steps, setSteps] = useState(1);
+  const [value, setValue] = useState(0)
+  const [steps, setSteps] = useState(1)
   return (
     <div className="step-counter">
       <input
@@ -16,7 +16,7 @@ const CounterWithStep = () => {
       <button onClick={() => setValue(value + steps)}>Increment</button>
       <button onClick={() => setValue(value - steps)}>Decrement</button>
     </div>
-  );
-};
+  )
+}
 
-export default CounterWithStep;
+export default CounterWithStep

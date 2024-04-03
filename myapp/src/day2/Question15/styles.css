@@ -1,0 +1,19 @@
+.students{
+width: 50vw;
+margin: auto;
+}
+.students li{
+list-style: none;
+
+}
+.students input{
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #666;
+}
+
+.students button{
+    background-color: mediumspringgreen;
+    color: black;
+    margin-left: 1rem;
+}

@@ -1,4 +1,4 @@
-import CountDown from "./CountDown";
+import CountDown from './CountDown'
 
 export default CountDown
 // 19.Build a custom hook named useTimer for creating countdown timers.

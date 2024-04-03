@@ -1,4 +1,4 @@
-import SlideShow from "./SlideShow";
+import SlideShow from './SlideShow'
 
 export default SlideShow
 
@@ -6,4 +6,3 @@ export default SlideShow
 // Add few images atleast 10 in public folder to populate the slideshow.
 // Allow users to pause, play the slideshow.
 // Include a time interval option to control the automatic slideshow progression.
-

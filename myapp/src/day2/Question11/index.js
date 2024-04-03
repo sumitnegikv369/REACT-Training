@@ -1,4 +1,4 @@
-import App from "./App";
+import App from './App'
 
 export default App
 // 11.Build a shopping cart application using the useContext hook.

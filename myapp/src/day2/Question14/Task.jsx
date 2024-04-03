@@ -1,9 +1,8 @@
-
-const Task = ({task, buttonHandler}) => {
+const Task = ({ task, buttonHandler }) => {
   return (
     <li className={`${task.isCompleted && 'disable'} task`}>
-        <span>{task.description}</span>
-        <button onClick={()=>buttonHandler(task.id)}>completed?</button>
+      <span>{task.description}</span>
+      <button onClick={() => buttonHandler(task.id)}>completed?</button>
     </li>
   )
 }

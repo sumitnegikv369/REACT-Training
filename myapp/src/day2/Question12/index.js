@@ -1,4 +1,4 @@
-import Voting from "./Voting";
+import Voting from './Voting'
 
 export default Voting
 

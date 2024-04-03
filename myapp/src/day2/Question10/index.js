@@ -1,4 +1,4 @@
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default LanguageSwitcher
 // 10.Develop a language switcher application using the useContext hook.
