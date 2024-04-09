@@ -15,16 +15,28 @@ const Cart = () => {
       </h1>
       <p>Total Price: $ {total}</p>
       <div>
-        {cart.map((product, index) => (
+        {cart.map((product) => (
           <div key={product.id}>
+            {product.counter}
             <h2>{product.title}</h2>
             <img src={product.images[0]} alt={product.title} />
+            {console.log(product)}
             <button
               onClick={() => {
-                const newCart = cart.filter((item, i) => i !== index)
-                setCart([...newCart])
-              }}
-            >
+                if(product.counter===0){
+                  const afterRemoving = cart.filter((item) => item.id !== product.id)
+                  console.log(cart)
+                  setCart([...afterRemoving])
+                }else{
+                  const newCart = cart.map((item) => {
+                    if(item.id === product.id){
+                      item.counter-=1;
+                    }
+                    return item;
+                  })
+                  setCart([...newCart])
+                }
+              }}>
               remove
             </button>
           </div>
