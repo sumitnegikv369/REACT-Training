@@ -27,7 +27,7 @@ const SlideShow = () => {
       }, speed * 1000)
       return () => clearTimeout(timer)
     }
-  }, [play, currentIndex])
+  }, [play, currentIndex, speed])
 
   return (
     <div className="slide">
