@@ -30,14 +30,15 @@ const Tasks = () => {
     (id) => {
       const updatedTasks = tasks.map((task) => {
         if (task.id === id) {
-          task.isCompleted = true
+          return { ...task, isCompleted: true };
         }
-        return task
-      })
-      setTasks([...updatedTasks])
+        return task;
+      });
+      setTasks(updatedTasks);
     },
     [tasks],
-  )
+  );
+  
 
   return (
     <div>
