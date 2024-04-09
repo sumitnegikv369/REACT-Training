@@ -7,10 +7,15 @@ const CounterWithStep = () => {
   return (
     <div className="step-counter">
       <input
-        type="text"
+        type="number"
         value={steps}
-        placeholder="Enter Number Of Steps"
-        onChange={(e) => setSteps(parseInt(e.target.value))}
+        defaultValue={1}
+        placeholder='1'
+        onChange={(e) => {
+          const inputValue = e.target.value;
+    if (!isNaN(inputValue)) {
+          setSteps(parseInt(inputValue))}
+        }}
       />
       <p>{value}</p>
       <button onClick={() => setValue(value + steps)}>Increment</button>
