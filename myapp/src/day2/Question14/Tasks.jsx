@@ -25,25 +25,22 @@ const data = [
 
 const Tasks = () => {
   const [tasks, setTasks] = useState(data)
-
+  
   const buttonHandler = useCallback(
     (id) => {
-      const updatedTasks = tasks.map((task) => {
-        if (task.id === id) {
-          return { ...task, isCompleted: true };
-        }
-        return task;
-      });
-      setTasks(updatedTasks);
+      setTasks((prevTasks) =>
+        prevTasks.map((task) =>
+          task.id === id ? { ...task, isCompleted: true } : task
+        )
+      );
     },
-    [tasks],
+    [setTasks] 
   );
-  
 
   return (
     <div>
       {tasks.map((task) => (
-        <Task key={task.id} task={task} buttonHandler={buttonHandler} />
+        <Task key={task.id} isCompleted={task.isCompleted} description={task.description} id={task.id} buttonHandler={buttonHandler} />
       ))}
     </div>
   )

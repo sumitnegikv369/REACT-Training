@@ -1,10 +1,14 @@
-const Task = ({ task, buttonHandler }) => {
+import { memo } from "react"
+
+const Task = ({isCompleted, description, id, buttonHandler }) => {
+  console.log(id)
   return (
-    <li className={`${task.isCompleted && 'disable'} task`}>
-      <span>{task.description}</span>
-      <button onClick={() => buttonHandler(task.id)}>completed?</button>
+    <li className={`${isCompleted && 'disable'} task`}>
+      <span>{description}</span>
+      <button onClick={() => buttonHandler(id)}>completed?</button>
     </li>
   )
 }
 
-export default Task
+
+export default memo(Task)

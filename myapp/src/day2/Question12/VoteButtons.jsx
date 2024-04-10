@@ -1,5 +1,4 @@
 const VoteButtons = ({ data, dispatch }) => {
-  console.log(typeof data)
   return (
     <>
       {data.map((brand) => (

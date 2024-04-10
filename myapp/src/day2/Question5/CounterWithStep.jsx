@@ -9,8 +9,6 @@ const CounterWithStep = () => {
       <input
         type="number"
         value={steps}
-        defaultValue={1}
-        placeholder='1'
         onChange={(e) => {
           const inputValue = e.target.value;
     if (!isNaN(inputValue)) {
