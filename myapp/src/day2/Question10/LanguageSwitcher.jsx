@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   const [language, setLanguage] = useState('english')
   return (
     <>
-      <select onClick={(e) => setLanguage(e.target.value)}>
+      <select onChange={(e) => setLanguage(e.target.value)}>
         {languages.map((lang) => (
           <option key={lang} value={lang}>
             {lang}

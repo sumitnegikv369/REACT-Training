@@ -4,14 +4,17 @@ import { MyContext } from './App.jsx'
 const Cart = () => {
   const { cart, setCart } = useContext(MyContext)
   const [total, setTotal] = useState(0)
+  const [itemsInCart, setItemsInCart] = useState(0)
   useEffect(() => {
-    const totalPrices = cart.reduce((acc, product) => acc + product.price, 0)
-    setTotal(totalPrices)
+    const totalPrices = cart.reduce((acc, product) => acc + (product.price * product.counter), 0)
+    setTotal(totalPrices);
+    const totalItem = cart.reduce((acc, product) => acc + product.counter, 0);
+    setItemsInCart(totalItem);
   }, [cart])
   return (
     <div className="cart">
       <h1>
-        Cart <span>{cart.length}</span>
+        Cart <span>{itemsInCart}</span>
       </h1>
       <p>Total Price: $ {total}</p>
       <div>
@@ -23,7 +26,7 @@ const Cart = () => {
             {console.log(product)}
             <button
               onClick={() => {
-                if(product.counter===0){
+                if(product.counter===1){
                   const afterRemoving = cart.filter((item) => item.id !== product.id)
                   console.log(cart)
                   setCart([...afterRemoving])
