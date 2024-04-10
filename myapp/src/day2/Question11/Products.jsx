@@ -31,8 +31,6 @@ const Products = () => {
           <button
             onClick={() => {
               let flag = false; // To determine whether the encountered product is the first instance or if there are multiple instances of that product in the cart."
-              cart.forEach(item => {
-                if(item.id===product.id){
                   const newCart = cart.map((item)=>{
                     if(item.id===product.id){
                       item["counter"] = item["counter"]+1;
@@ -41,8 +39,6 @@ const Products = () => {
                     return item;
                   })
                   setCart([...newCart])
-                }
-              });
               if(!flag){
                 setCart([...cart, product])
               }
