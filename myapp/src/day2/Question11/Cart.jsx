@@ -23,12 +23,10 @@ const Cart = () => {
             {product.counter}
             <h2>{product.title}</h2>
             <img src={product.images[0]} alt={product.title} />
-            {console.log(product)}
             <button
               onClick={() => {
                 if(product.counter===1){
                   const afterRemoving = cart.filter((item) => item.id !== product.id)
-                  console.log(cart)
                   setCart([...afterRemoving])
                 }else{
                   const newCart = cart.map((item) => {

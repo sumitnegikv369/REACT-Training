@@ -13,9 +13,7 @@ const UserPreference = () => {
   const [currentPreference, setCurrentPreference] = useState(preference)
 
   const handlePreferenceChange = (key, value) => {
-    preference[key] = value
-    const updatedPreference = preference
-    setPreference(updatedPreference)
+    setPreference({...preference, [key]: value})
   }
 
   useEffect(() => {
