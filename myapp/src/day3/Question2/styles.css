@@ -1,19 +1,21 @@
 .dark, .light{
-    font-size: 1rem;
+    font-size: 0.75rem !important;
     padding: 2rem;
     width: 50vw;
     margin: auto;
     border-radius: 8px;
+    box-shadow: 4px 4px 8px #656565ae;
+    font-family: 'Poppins';
 }
 
 .dark{
-    background-color: black;
+    background-color: #424271;
     color: white;
 }
 
 .light{
     background-color: white;
-    color: dark;
+    color: #424271;
 }
 
 .theme{
@@ -24,7 +26,7 @@
 }
 
 .theme button{
-    background-color: deepskyblue;
+    background-color: #FF8CA8;
     color: white;
     padding: 1rem;
     border-radius: 8px;
@@ -47,18 +49,26 @@
     border-radius: 8px;
 }
 
+.ques2 .disabledInput{
+    background-color: #c641ab54;
+}
 .ques2 input::placeholder{
     font-size: 1rem;
 }
 
 .ques2 > button{
-    background-color: green;
+    background-color: #C641AC;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 800;
     text-transform: capitalize;
+}
+
+.ques2 p{
+    letter-spacing: 2px;
+    font-size: 1.25rem;
 }
 
 

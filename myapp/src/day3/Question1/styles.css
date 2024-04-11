@@ -4,6 +4,7 @@
     gap: 1rem;
     width: 50vw;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .ques1 input{
@@ -11,20 +12,25 @@
     border-radius: 8px;
 }
 
+.ques1 .disabledInput{
+    background-color: #6670e033;
+}
+
 .ques1 input::placeholder{
     font-size: 1rem;
 }
 
 .ques1 button{
-    background-color: crimson;
+    background-color: #6670E0;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 800;
     text-transform: capitalize;
 }
 
 .ques1 p{
     letter-spacing: 2px;
+    font-size: 1.25rem;
 }

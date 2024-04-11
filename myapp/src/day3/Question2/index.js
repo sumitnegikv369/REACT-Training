@@ -1,4 +1,4 @@
-import Parent from "./Parent";
+import Parent from './Parent'
 
 export default Parent
 // 2.Extend the previous application to demonstrate the use of nested contexts.

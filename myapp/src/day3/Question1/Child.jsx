@@ -1,18 +1,19 @@
 import React, { useContext, useState } from 'react'
 import { AuthContext } from './Parent'
-import styles from './styles.css'
+import './styles.css'
 
 const Child = () => {
   const { isLogin, setIsLogin } = useContext(AuthContext)
   const [username, setUsername] = useState('')
   return (
-    <div className='ques1'>
+    <div className="ques1">
       <input
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         disabled={isLogin}
-        placeholder='Enter username'
+        placeholder="Enter username"
+        className={`${isLogin ? 'disabledInput' : ''}`}
       />
       <button
         disabled={username.length > 0 ? false : true}
@@ -21,7 +22,8 @@ const Child = () => {
             setUsername('')
           }
           setIsLogin(!isLogin)
-        }}>
+        }}
+      >
         {isLogin ? 'Logout' : 'login'}
       </button>
       <p>{isLogin ? `Welcome, ${username}!` : 'Please log in'}</p>

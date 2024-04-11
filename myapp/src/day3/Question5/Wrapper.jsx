@@ -15,20 +15,19 @@ const Wrapper = () => {
   return (
     <MyContext.Provider value={{ auth, setAuth }}>
       <Router>
+        <nav>
+          <Link to="/dashboard">Dashboard</Link>
+        </nav>
 
-                <nav>
-                <Link to="/dashboard">Dashboard</Link>
-                </nav>
-
-          <Routes>
-            <Route element={<Authenticate />}>
-              <Route path="/dashboard" element={<Dashboard />}>
-                <Route element={<Profile />} path="profile" />
-                <Route element={<Settings />} path="settings" />
-              </Route>
+        <Routes>
+          <Route element={<Authenticate />}>
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route element={<Profile />} path="profile" />
+              <Route element={<Settings />} path="settings" />
             </Route>
-            <Route element={<Login />} path="/login" />
-          </Routes>
+          </Route>
+          <Route element={<Login />} path="/login" />
+        </Routes>
       </Router>
     </MyContext.Provider>
   )

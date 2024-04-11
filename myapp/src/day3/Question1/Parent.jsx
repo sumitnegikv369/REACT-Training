@@ -1,14 +1,14 @@
 import { createContext, useState } from 'react'
-import Child from './Child';
+import Child from './Child'
 
-export const AuthContext = createContext(false);
+export const AuthContext = createContext(false)
 
 const Parent = () => {
-    const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(false)
 
   return (
-    <AuthContext.Provider value={{isLogin, setIsLogin}}>
-        <Child/>
+    <AuthContext.Provider value={{ isLogin, setIsLogin }}>
+      <Child />
     </AuthContext.Provider>
   )
 }

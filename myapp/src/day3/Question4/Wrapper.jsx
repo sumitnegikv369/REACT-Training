@@ -11,9 +11,9 @@ function Wrapper() {
   return (
     <MyContext.Provider value={{ auth, setAuth }}>
       <Router>
-      <nav className='nav'>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
+        <nav className="nav">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
         </nav>
         <Routes>
           <Route element={<Authenticate />}>

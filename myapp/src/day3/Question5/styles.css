@@ -6,12 +6,15 @@
     margin: auto;
     font-size: 1.45rem;
 }
-.ques5 p{
-    margin-top: 1rem;
-}
 
 .ques5 h1{
+    margin-top: 1rem;
     font-size: 1rem;
+}
+
+.ques5 h2{
+    margin-top: -1rem;
+    font-size: 1.75rem;
 }
 
 .ques5 input{
@@ -45,7 +48,6 @@ nav a{
 
 .nav{
     display: flex;
-    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -57,4 +59,9 @@ nav a{
     padding: 0.45rem 1rem;
     font-size: 1rem;
     border-radius: 6px;
+}
+
+.button{
+    margin-top: 2rem;
+    background-color: #00ccff;
 }

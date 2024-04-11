@@ -6,12 +6,14 @@ const Child = () => {
   const { prefernce, setPrefernce } = useContext(ThemeContext)
   const [username, setUsername] = useState('')
   return (
-    <div className='ques2'>
+    <div className="ques2">
       <input
         type="text"
         value={username}
+        placeholder="Enter username"
         onChange={(e) => setUsername(e.target.value)}
         disabled={isLogin}
+        className={`${isLogin ? 'disabledInput' : ''}`}
       />
 
       <button
@@ -21,14 +23,21 @@ const Child = () => {
             setUsername('')
           }
           setIsLogin(!isLogin)
-        }}>
+        }}
+      >
         {isLogin ? 'Logout' : 'login'}
       </button>
       <p>{isLogin ? `Welcome, ${username}!` : 'Please log in'}</p>
       {isLogin && (
-        <div className='theme'>
-          <button onClick={()=>setPrefernce({...prefernce, theme: 'dark'})}>Dark Mode</button>
-          <button onClick={()=>setPrefernce({...prefernce, theme: 'light'})}>Light Mode</button>
+        <div className="theme">
+          <button onClick={() => setPrefernce({ ...prefernce, theme: 'dark' })}>
+            Dark Mode
+          </button>
+          <button
+            onClick={() => setPrefernce({ ...prefernce, theme: 'light' })}
+          >
+            Light Mode
+          </button>
         </div>
       )}
       <div>
