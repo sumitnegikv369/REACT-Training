@@ -1,0 +1,40 @@
+.notification input{
+    width: fit-content;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.notification{
+    position: relative;
+}
+.notification p{
+    background-color: rgba(0, 0, 255, 0.397);
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    width: fit-content;
+    padding: 1rem;
+    right: 5%;
+    top: -50%;
+    text-transform: capitalize;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.notification button{
+    background-color: #000;
+    margin-left: 1rem;
+}

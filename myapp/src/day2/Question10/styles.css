@@ -1,0 +1,22 @@
+.content{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+select{
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    float: right;
+    margin: 1rem;
+}
+
+.content p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content button{
+    background-color: cornflowerblue;
+}

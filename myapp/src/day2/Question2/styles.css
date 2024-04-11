@@ -1,0 +1,44 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #3333332d;
+    width: fit-content;
+    margin: auto;
+    padding: 2rem 1rem 3rem 1rem;
+    border-radius: 6px;
+}
+
+.form input{
+    padding: 1rem;
+    width: 25vw;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid rgba(95, 158, 160, 1);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form input:focus{
+    outline: none;
+    animation: animate 1s forwards;
+}
+
+@keyframes animate {
+    0% {
+        background: #fff;
+    }
+    100% {
+        background-color: rgba(128, 255, 0, 0.192);
+    }
+}
+
+.form p{
+    width: 25vw;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: rgba(220, 20, 60, 0.534);
+    letter-spacing: 1.5px;
+    background-color: rgba(95, 158, 160, 0.336);
+    border-radius: 4px;
+    padding: 1rem;
+}

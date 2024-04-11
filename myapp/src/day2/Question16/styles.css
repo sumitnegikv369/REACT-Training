@@ -1,0 +1,17 @@
+.employee{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.employee h2{
+    margin: 1rem 0;
+    letter-spacing: 2px;
+}
+
+.employee button{
+    background-color: green;
+    width: fit-content;
+    margin: auto;
+}

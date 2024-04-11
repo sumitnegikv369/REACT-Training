@@ -1,0 +1,27 @@
+.step-counter input{
+    background-color: azure;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.step-counter button:first-of-type{
+background-color: red;
+}
+
+.step-counter button{
+    background-color: green;
+    margin-left: 1rem;
+    }
+
+.step-counter p{
+    margin: 1rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

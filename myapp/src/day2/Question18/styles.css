@@ -1,0 +1,53 @@
+.preference{
+
+}
+
+.preference section{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.preference section button{
+    background-color: cornflowerblue;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.preference section p{
+    color: red;
+}
+
+.preference section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 0.45rem;
+    font-size: 0.75rem;
+}
+
+
+.preference > div{
+    font-size: 1rem;
+    width: 50vw;
+    margin: auto;
+    margin-top: 1rem;
+    letter-spacing: 1.4px;
+    line-height: 20px;
+    font-family: fantasy;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
