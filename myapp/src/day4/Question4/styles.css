@@ -1,7 +1,18 @@
 .registration{
     width: 50vw;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
 }
+
+.registration input{
+    text-transform: capitalize;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #3333;
+}
+
 
 .registration input[type="submit"]{
     background-color: #25D7BA;
