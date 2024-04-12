@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './styles.css'
 
 const SearchFilter = () => {
   const [items, setItems] = useState([])
@@ -6,7 +7,7 @@ const SearchFilter = () => {
   const filterSearch = async () => {
     const res = await fetch('https://dummyjson.com/products')
     const data = await res.json()
-    const products = data.products;
+    const products = data.products
 
     const filterData = products.filter((product) =>
       product.title.toLowerCase().startsWith(searchInput.toLowerCase()),
@@ -18,12 +19,15 @@ const SearchFilter = () => {
   }
 
   useEffect(() => {
-    filterSearch()
+    if (searchInput.length > 0) {
+      filterSearch()
+    } else {
+      setItems([])
+    }
   }, [searchInput])
-  
 
   return (
-    <div>
+    <div className="ques7">
       <input
         type="text"
         value={searchInput}

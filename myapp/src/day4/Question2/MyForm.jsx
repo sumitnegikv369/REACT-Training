@@ -56,16 +56,14 @@ const MyForm = () => {
         />
       </div>
       <div className="form-group">
-          <input
-            type="checkbox"
-            id="rememberMe"
-            name="rememberMe"
-            checked={formData.rememberMe}
-            onChange={handleInputChange}
-          />
-        <label htmlFor="rememberMe">
-          Remember me
-        </label>
+        <label htmlFor="rememberMe">Remember me</label>
+        <input
+          type="checkbox"
+          id="rememberMe"
+          name="rememberMe"
+          checked={formData.rememberMe}
+          onChange={handleInputChange}
+        />
       </div>
       <div className="form-group-vertical">
         <label>Gender:</label>

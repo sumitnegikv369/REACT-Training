@@ -2,3 +2,10 @@
     width: 50vw;
     margin: auto;
 }
+
+.registration input[type="submit"]{
+    background-color: #25D7BA;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+}

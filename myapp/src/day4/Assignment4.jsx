@@ -1,6 +1,6 @@
-import Tag from './components/Tag'
+import Tag from '../components/Tag'
 import {
-//   Question1,
+  Question1,
   Question2,
   Question3,
   Question4,
@@ -18,19 +18,21 @@ const Assignment4 = () => {
     <>
       <h1>Assignment 4</h1>
       <div>
-        {/* <Tag assignmentNumber={4} questionNumber={1} />
-        <Question1 /> */}
+        <Tag assignmentNumber={4} questionNumber={1} />
+        <Question1 />
         <Tag assignmentNumber={4} questionNumber={2} />
         <Question2 />
-        <Tag assignmentNumber={4} questionNumber={3} />
+
+        {/* 
+          <Tag assignmentNumber={4} questionNumber={3} />
         <Question3 />
-        <Tag assignmentNumber={4} questionNumber={4} />
+                <Tag assignmentNumber={4} questionNumber={4} />
         <Question4 />
-        <Tag assignmentNumber={4} questionNumber={5} />
+          <Tag assignmentNumber={4} questionNumber={5} />
         <Question5 />
-        <Tag assignmentNumber={4} questionNumber={6} />
+                <Tag assignmentNumber={4} questionNumber={6} />
         <Question6 />
-        <Tag assignmentNumber={4} questionNumber={7} />
+                <Tag assignmentNumber={4} questionNumber={7} />
         <Question7 />
         <Tag assignmentNumber={4} questionNumber={8} />
         <Question8 />
@@ -39,7 +41,7 @@ const Assignment4 = () => {
         <Tag assignmentNumber={4} questionNumber={10} />
         <Question10 />
         <Tag assignmentNumber={4} questionNumber={11} />
-        <Question11 />
+        <Question11 /> */}
       </div>
     </>
   )

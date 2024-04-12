@@ -1,0 +1,13 @@
+
+.ques1 input{
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #3333;
+    position: relative;
+}
+
+.ques1 input:focus{
+    outline: none;
+}
+
+

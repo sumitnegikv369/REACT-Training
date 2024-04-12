@@ -6,10 +6,13 @@ const Cart = () => {
   const [total, setTotal] = useState(0)
   const [itemsInCart, setItemsInCart] = useState(0)
   useEffect(() => {
-    const totalPrices = cart.reduce((acc, product) => acc + (product.price * product.counter), 0)
-    setTotal(totalPrices);
-    const totalItem = cart.reduce((acc, product) => acc + product.counter, 0);
-    setItemsInCart(totalItem);
+    const totalPrices = cart.reduce(
+      (acc, product) => acc + product.price * product.counter,
+      0,
+    )
+    setTotal(totalPrices)
+    const totalItem = cart.reduce((acc, product) => acc + product.counter, 0)
+    setItemsInCart(totalItem)
   }, [cart])
   return (
     <div className="cart">
@@ -25,19 +28,22 @@ const Cart = () => {
             <img src={product.images[0]} alt={product.title} />
             <button
               onClick={() => {
-                if(product.counter===1){
-                  const afterRemoving = cart.filter((item) => item.id !== product.id)
+                if (product.counter === 1) {
+                  const afterRemoving = cart.filter(
+                    (item) => item.id !== product.id,
+                  )
                   setCart([...afterRemoving])
-                }else{
+                } else {
                   const newCart = cart.map((item) => {
-                    if(item.id === product.id){
-                      item.counter-=1;
+                    if (item.id === product.id) {
+                      item.counter -= 1
                     }
-                    return item;
+                    return item
                   })
                   setCart([...newCart])
                 }
-              }}>
+              }}
+            >
               remove
             </button>
           </div>

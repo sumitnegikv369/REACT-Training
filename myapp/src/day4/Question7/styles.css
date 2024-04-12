@@ -1,0 +1,33 @@
+.ques7{
+    width: 50vw;
+    margin: auto;
+}
+
+.ques7 input{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1.25px solid rgba(0, 0, 0, 0.291);
+    text-transform: capitalize;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ques7 input:focus{
+    outline: none;
+}
+
+.ques7 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3331;
+}
+
+.ques7 li{
+    list-style: none;
+    font-size: 0.75rem;
+    margin: 0;
+    background-color: transparent;
+}
