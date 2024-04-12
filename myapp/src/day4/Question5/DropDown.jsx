@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './styles.css'
 
 const DropDown = () => {
-  const [selectedValue, setSelectedValue] = useState('India')
+  const [selectedValue, setSelectedValue] = useState('India 🇮🇳')
   return (
     <div className="ques5">
       <select

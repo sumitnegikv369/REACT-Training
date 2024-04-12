@@ -1,25 +1,38 @@
 .ques6{
     display: flex;
-    width: 50vw;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin: auto;
+    padding: 2rem;
+    width: 50vw;
 }
 .ques6 .inputarea {
     display: grid;
     grid-template-columns: 4fr 2fr;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    margin: auto;
 }
 .ques6 input{
     padding: 1rem;
     width: 100%;
     text-transform: capitalize;
+    border-radius: 6px;
+    border: 2px solid #3333;
+    border-right: none;
 }
 
+.ques6 button{
+    background-color: rgb(133, 33, 226);
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+}
 .ques6 button, ul{
     width: 100%;
+    list-style: none;
 }
 
 .ques6 li{
