@@ -30,13 +30,14 @@ const Assignment4 = () => {
         <Question5 />
                 <Tag assignmentNumber={4} questionNumber={6} />
         <Question6 />
-        {/* 
-          
-          
-                <Tag assignmentNumber={4} questionNumber={7} />
+        <Tag assignmentNumber={4} questionNumber={7} />
         <Question7 />
         <Tag assignmentNumber={4} questionNumber={8} />
         <Question8 />
+        {/* 
+          
+          
+
         <Tag assignmentNumber={4} questionNumber={9} />
         <Question9 />
         <Tag assignmentNumber={4} questionNumber={10} />
