@@ -7,7 +7,7 @@ const App = () => {
     <>
       {/* <Assignment1 /> */}
       {/* <Assignment2 /> */}
-      <Assignment3/>
+      <Assignment3 />
     </>
   )
 }
