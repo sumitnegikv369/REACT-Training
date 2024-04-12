@@ -1,13 +1,14 @@
-// import Tag from '../components/Tag'
-// import {
-//   Question1,
-//   Question2,
-//   Question3,
-//   Question4,
-//   Question5,
-//   Question6,
-// } from '.'
+import Tag from '../components/Tag'
+import {
+  Question1,
+  Question2,
+  Question3,
+  Question4,
+  Question5,
+  Question6,
+} from '.'
 import App from './App'
+import './styles.css'
 
 const Assignment3 = () => {
   return (
