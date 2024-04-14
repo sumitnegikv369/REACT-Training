@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import { useState } from 'react'
+import './styles.css'
 
 const Form = () => {
   const [userInfo, setUserInfo] = useState({
@@ -10,6 +11,7 @@ const Form = () => {
   })
   return (
     <Box
+    className='ques10'
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '25ch' },
