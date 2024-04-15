@@ -1,0 +1,21 @@
+.ques8 h2{
+    font-size: 1rem;
+}
+
+.ques8{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.ques8 div{
+    width: fit-content;
+    border: 2px solid rgba(17, 132, 255, 0.257);
+    padding: 1rem;
+    border-radius: 6px;
+    background-image: linear-gradient(45deg, #0e84b689, #095ba87c);
+    color: white;
+}

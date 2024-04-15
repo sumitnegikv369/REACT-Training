@@ -1,0 +1,79 @@
+.ques9 h2{
+    font-size: 1rem;
+}
+
+.ques9{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+}
+
+
+.ques9 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ques9 .pagination{
+    display: flex;
+    justify-content: center;
+}
+.ques9 .pagination p:first-of-type{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 2px solid rgb(0, 166, 255);
+}
+.ques9 .pagination p{
+    border-top: 2px solid rgb(0, 166, 255);
+    border-bottom: 2px solid rgb(0, 166, 255);
+    border-left: 2px solid rgb(0, 166, 255);
+   
+    padding: 0.45rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.ques9 .pagination p:last-of-type{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 2px solid rgb(0, 166, 255);
+}
+
+.ques9 .pagination .active{
+    background-color:  rgb(0, 166, 255);
+    color: white;
+}
+
+.ques9 .container div {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 43, 95, 0.245);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
+.ques9 .container div h2{
+    color: rgb(5, 42, 95);
+}
+.ques9 .container div img{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.ques9 .container div p{
+    padding-top: 1rem;
+    color: rgb(5, 42, 95);
+}
+
+.ques9 .container div .details{
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+}

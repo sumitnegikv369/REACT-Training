@@ -1,0 +1,11 @@
+.ques1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.ques1 img{
+    width: 200px;
+    border-radius: 6px;
+}

@@ -1,0 +1,76 @@
+.ques4 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ques4 .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ques4 .pagination{
+    display: flex;
+    justify-content: center;
+}
+.ques4 .pagination p:first-of-type{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 2px solid rgb(0, 166, 255);
+}
+.ques4 .pagination p{
+    border-top: 2px solid rgb(0, 166, 255);
+    border-bottom: 2px solid rgb(0, 166, 255);
+    border-right: 2px solid rgb(0, 166, 255);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.ques4 .pagination p:last-of-type{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.ques4 .pagination .active{
+    background-color:  rgb(0, 166, 255);
+    color: white;
+}
+
+.ques4 .head button{
+    border-radius: 50%;
+    cursor: pointer;
+    aspect-ratio: 1;
+    box-shadow: 2px 2px 8px #3334;
+    background-image: linear-gradient(45deg, #a50000, #e10000, #a50000);
+}
+.ques4 .container div {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 43, 95, 0.245);
+    width: 40vw;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
+.ques4 .container div h2{
+    color: rgb(5, 42, 95);
+}
+.ques4 .container div img{
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.ques4 .container div p{
+    padding-top: 1rem;
+    color: rgb(5, 42, 95);
+}
+
+.ques4 .container div .details{
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+}
