@@ -1,0 +1,17 @@
+.ques14{
+
+}
+
+.ques14  button{
+    background-color: red;
+}
+
+.ques14 a{
+    text-decoration: none;
+    color: rgb(20, 138, 206);
+    font-size: 1rem;
+    border: 2px solid rgba(20, 138, 206, 0.551);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-left: 1rem;
+}

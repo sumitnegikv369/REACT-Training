@@ -7,7 +7,10 @@ import Question6 from './Question6'
 import Question7 from './Question7'
 import Question8 from './Question8'
 import Question9 from './Question9'
+import Question14 from './Question14'
+import Question16 from './Question16'
+import Question15 from './Question15'
 
-export { Question1, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9 }
+export { Question1, Question2, Question3, Question4, Question5, Question6, Question7, Question8, Question9, Question14, Question16, Question15 }
 
 

@@ -9,6 +9,9 @@ import {
   Question7,
   Question8,
   Question9,
+  Question14,
+  Question16,
+  Question15,
 } from '.'
 
 const Assignment5 = () => {
@@ -35,8 +38,10 @@ const Assignment5 = () => {
         <Question7 />  */}
         {/* <Tag assignmentNumber={3} questionNumber={8} />
         <Question8 />  */}
+        {/* <Tag assignmentNumber={3} questionNumber={9} />
+        <Question14 />  */}
         <Tag assignmentNumber={3} questionNumber={9} />
-        <Question9 /> 
+        <Question16 /> 
       </div>
     </>
   )

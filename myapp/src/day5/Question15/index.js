@@ -1,11 +1,5 @@
-import React from 'react'
+import SimpleComponent from "./SimpleComponent";
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+export default SimpleComponent
 
 // 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
