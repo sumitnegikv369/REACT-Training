@@ -8,7 +8,7 @@ const StudentList = () => {
   const [name, setName] = useState('')
   const students = useMemo(() => names, [names])
   const addNewStudent = () => {
-    setNames([...students, name]);
+    setNames([...students, name])
     setName('')
   }
   return (

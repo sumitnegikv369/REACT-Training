@@ -10,15 +10,16 @@ const Products = () => {
         return res.json()
       })
       .then((productData) => {
-        const modifyProduct = productData.products.map((item)=>{
-            item["counter"] = 1;
-          return item;
-        }).splice(0, 4);
-        setData(modifyProduct);
+        const modifyProduct = productData.products
+          .map((item) => {
+            item['counter'] = 1
+            return item
+          })
+          .splice(0, 4)
+        setData(modifyProduct)
       })
       .catch((error) => console.log(error))
   }, [])
-
 
   return (
     <div className="cards-container">
@@ -30,19 +31,18 @@ const Products = () => {
           <h3>$ {product.price}</h3>
           <button
             onClick={() => {
-              let flag = false; // To determine whether the encountered product is the first instance or if there are multiple instances of that product in the cart."
-                  const newCart = cart.map((item)=>{
-                    if(item.id===product.id){
-                      item["counter"] = item["counter"]+1;
-                      flag=true;
-                    }
-                    return item;
-                  })
-                  setCart([...newCart])
-              if(!flag){
+              let flag = false // To determine whether the encountered product is the first instance or if there are multiple instances of that product in the cart."
+              const newCart = cart.map((item) => {
+                if (item.id === product.id) {
+                  item['counter'] = item['counter'] + 1
+                  flag = true
+                }
+                return item
+              })
+              setCart([...newCart])
+              if (!flag) {
                 setCart([...cart, product])
               }
-            
             }}
           >
             Add To Cart
