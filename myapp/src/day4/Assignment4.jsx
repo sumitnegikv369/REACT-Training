@@ -11,6 +11,7 @@ import {
   Question9,
   Question10,
   Question11,
+  Question14,
 } from '.'
 
 const Assignment4 = () => {
@@ -40,6 +41,8 @@ const Assignment4 = () => {
         <Question10 />
         <Tag assignmentNumber={4} questionNumber={11} />
         <Question11 /> 
+        <Tag assignmentNumber={4} questionNumber={11} />
+        <Question14 /> 
       </div>
     </>
   )

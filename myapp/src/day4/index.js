@@ -9,6 +9,7 @@ import Question8 from './Question8'
 import Question9 from './Question9'
 import Question10 from './Question10'
 import Question11 from './Question11'
+import Question14 from './Question14'
 
 export {
   Question1,
@@ -22,4 +23,5 @@ export {
   Question9,
   Question10,
   Question11,
+  Question14,
 }
