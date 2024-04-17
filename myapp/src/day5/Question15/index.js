@@ -2,4 +2,4 @@ import SimpleComponent from "./SimpleComponent";
 
 export default SimpleComponent
 
-// 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
+// 15.Build an HOC called withLogger that logs the events of a component (e.g., mounting, unmounting, updating). Apply this HOC to a component and display the logs in the browser console.
