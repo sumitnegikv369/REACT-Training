@@ -4,9 +4,11 @@ const Todo = () => {
   const [tasks, setTasks] = useState([])
   const [value, setValue] = useState('')
   const handleTask = () => {
-    const newTasks = [...tasks, value]
-    setTasks([...newTasks])
-    setValue('')
+    if(value.length>0){
+      const newTasks = [...tasks, value]
+      setTasks([...newTasks])
+      setValue('')
+    }
   }
   const removetask = (index) => {
     setTasks((prevTask) => prevTask.filter((_, i) => i !== index))

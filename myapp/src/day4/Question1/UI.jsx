@@ -6,7 +6,7 @@ const UI = () => {
   return (
     <div className="ques1">
       <input
-        cvalue={value}
+        value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Enter A Value"
       />
