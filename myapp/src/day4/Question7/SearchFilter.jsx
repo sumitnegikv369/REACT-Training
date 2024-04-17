@@ -3,26 +3,32 @@ import './styles.css'
 
 const SearchFilter = () => {
   const [items, setItems] = useState([])
+  const [filteredItems, setFilteredItems] = useState([])
   const [searchInput, setSearchInput] = useState('')
-  const filterSearch = async () => {
+
+  const filterHandler = (products) => {
+    const filterData = products.filter((product) =>
+      product.title.toLowerCase().startsWith(searchInput.toLowerCase()),
+    )
+    setFilteredItems([...filterData])
+  }
+  const fetchData = async () => {
     const res = await fetch('https://dummyjson.com/products')
     const data = await res.json()
     const products = data.products
 
-    const filterData = products.filter((product) =>
-      product.title.toLowerCase().startsWith(searchInput.toLowerCase()),
-    )
-    setItems([...filterData])
-    console.log(products)
-    console.log(filterData)
-    console.log(items)
+    setItems([...products]);
   }
 
   useEffect(() => {
-    if (searchInput.length > 0) {
-      filterSearch()
-    } else {
-      setItems([])
+      fetchData();
+  }, [])
+
+  useEffect(()=>{
+    if(searchInput.length>0){
+      filterHandler(items);
+    }else{
+      filterHandler([]);
     }
   }, [searchInput])
 
@@ -32,10 +38,12 @@ const SearchFilter = () => {
         type="text"
         value={searchInput}
         placeholder="enter a phone brand"
-        onChange={(e) => setSearchInput(e.target.value)}
+        onChange={(e) => {
+          setSearchInput(e.target.value);
+        }}
       />
       <ul>
-        {items.map((item) => (
+        {filteredItems.map((item) => (
           <li key={item.id}>{item.title}</li>
         ))}
       </ul>
