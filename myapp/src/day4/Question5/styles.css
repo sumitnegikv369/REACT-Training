@@ -1,0 +1,10 @@
+.ques5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ques5 p{
+    margin-left: 2rem;
+}
