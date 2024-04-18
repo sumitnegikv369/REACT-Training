@@ -1,0 +1,17 @@
+.ques3{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ques3 input{
+    text-transform: capitalize;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #3333;
+}
+
+.ques3 button{
+    background-color: rgba(255, 7, 7, 0.863);
+}
