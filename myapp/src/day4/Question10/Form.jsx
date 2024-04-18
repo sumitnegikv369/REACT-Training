@@ -1,46 +1,46 @@
-import React, { useState } from "react";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import React, { useState } from 'react'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-  });
+    username: '',
+    email: '',
+  })
 
   const [formErrors, setFormErrors] = useState({
-    username: "",
-    email: "",
-  });
+    username: '',
+    email: '',
+  })
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
-    }));
-  };
+    }))
+  }
 
   const validateForm = () => {
-    const errors = {};
+    const errors = {}
     if (!formData.username) {
-      errors.username = "user name is required";
+      errors.username = 'user name is required'
     }
     if (!formData.email) {
-      errors.email = "Email is required";
+      errors.email = 'Email is required'
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = "Invalid email address";
+      errors.email = 'Invalid email address'
     }
-    setFormErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
+    setFormErrors(errors)
+    return Object.keys(errors).length === 0
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (validateForm()) {
-      console.log("Form submitted:", formData);
+      console.log('Form submitted:', formData)
     }
-  };
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -70,8 +70,7 @@ const Form = () => {
         Submit
       </Button>
     </form>
-  );
-};
+  )
+}
 
-export default Form;
-
+export default Form

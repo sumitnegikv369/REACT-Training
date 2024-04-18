@@ -1,29 +1,33 @@
-.ques2{
+.ques2 {
     display: flex;
     flex-direction: column;
     width: 100vw;
     padding: 0 10%;
 }
 
-.ques2 .buttons{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 1rem;
+.ques2 .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
 }
 
-.ques2 .buttons button{
+.ques2 .buttons button {
     background-color: rgba(9, 169, 255, 0.337);
     color: black;
     letter-spacing: 3px;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-.ques2 .users p{
+.ques2 .users p {
     margin: auto;
     color: crimson;
 }
 
-.ques2 .users{
+.ques2 .users {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,17 +35,17 @@ gap: 1rem;
     gap: 1rem;
 }
 
-.ques2 .users div{
+.ques2 .users div {
     border: 2px solid rgba(255, 0, 0, 0.288);
     padding: 1rem;
     border-radius: 8px;
     background-image: radial-gradient(#fff, #fefe);
 }
 
-.ques2 .users div h1{
+.ques2 .users div h1 {
     font-size: 1rem;
 }
 
-.ques2 .users div p{
+.ques2 .users div p {
     font-size: 0.75rem;
 }

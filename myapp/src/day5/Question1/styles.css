@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
+    margin: auto;
+    width: 50vw;
+    gap: 1rem;
 }
 
 .ques1 img{

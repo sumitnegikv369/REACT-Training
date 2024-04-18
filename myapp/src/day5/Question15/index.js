@@ -1,4 +1,4 @@
-import SimpleComponent from "./SimpleComponent";
+import SimpleComponent from './SimpleComponent'
 
 export default SimpleComponent
 

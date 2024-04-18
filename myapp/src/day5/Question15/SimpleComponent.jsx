@@ -7,7 +7,7 @@ const SimpleComponent = ({ counter, setCounter }) => {
   }
 
   return (
-    <div className='ques15'>
+    <div className="ques15">
       <button onClick={handleIncrement}>increment</button>
       {counter}
     </div>

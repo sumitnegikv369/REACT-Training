@@ -6,15 +6,15 @@ import './styles.css'
 
 const App = () => {
   return (
-    <div className='ques14'>
-        <BrowserRouter>
-        <Link to={"/"}>About</Link>
-        <Link to={"/profile"}>Profile</Link>
+    <div className="ques14">
+      <BrowserRouter>
+        <Link to={'/'}>About</Link>
+        <Link to={'/profile'}>Profile</Link>
         <Routes>
-            <Route path='/' element={<About/>}/>
-            <Route path='/profile' element={<Profile/>}/>
+          <Route path="/" element={<About />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
   )
 }

@@ -3,6 +3,16 @@ width: 100vw;
 padding: 1rem;
 }
 
+.ques3 button{
+    padding: 1rem;
+    background-color: #b371ff;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+border-radius: 8px;
+cursor: pointer;
+}
+
 .ques3 .spinner{
     background-color: transparent;
     width: 50px;
@@ -11,6 +21,7 @@ padding: 1rem;
     border: 4px solid rgb(10, 186, 255);
     border-bottom: 4px solid transparent;
     animation: spin 400ms infinite linear;
+    margin: auto;
 }
 
 .commment{

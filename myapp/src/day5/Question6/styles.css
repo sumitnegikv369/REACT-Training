@@ -1,0 +1,17 @@
+.ques6{
+
+}
+
+.ques6 button{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.ques6 button:hover{
+    background-color: #333;
+}
