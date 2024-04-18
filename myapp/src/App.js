@@ -1,9 +1,9 @@
-import React from 'react'
-import Temp from './Temp'
-
+import Assignment6 from "./day6/Assignment6"
 const App = () => {
   return (
-    <div><Temp/></div>
+    <>
+      <Assignment6 />
+    </>
   )
 }
 
