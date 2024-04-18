@@ -1,6 +1,6 @@
-import { memo } from "react"
+import { memo } from 'react'
 
-const Task = ({isCompleted, description, id, buttonHandler }) => {
+const Task = ({ isCompleted, description, id, buttonHandler }) => {
   console.log(id)
   return (
     <li className={`${isCompleted && 'disable'} task`}>
@@ -9,6 +9,5 @@ const Task = ({isCompleted, description, id, buttonHandler }) => {
     </li>
   )
 }
-
 
 export default memo(Task)

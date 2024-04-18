@@ -10,9 +10,10 @@ const CounterWithStep = () => {
         type="number"
         value={steps}
         onChange={(e) => {
-          const inputValue = e.target.value;
-    if (!isNaN(inputValue)) {
-          setSteps(parseInt(inputValue))}
+          const inputValue = e.target.value
+          if (!isNaN(inputValue)) {
+            setSteps(parseInt(inputValue))
+          }
         }}
       />
       <p>{value}</p>
