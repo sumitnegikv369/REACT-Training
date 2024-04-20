@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import './styles.css'
 
 const Cart = () => {
   const [cartData, setCartData] = useState([])
@@ -18,7 +19,7 @@ const Cart = () => {
   }, [])
 
   return (
-    <div>
+    <div className="ques5">
       {cartData.map((cart) => (
         <div key={cart.id}>
           <h2>{cart.title}</h2>

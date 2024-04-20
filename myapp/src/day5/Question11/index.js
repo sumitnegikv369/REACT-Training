@@ -1,9 +1,5 @@
-import React from 'react'
+import Country from './Country'
 
-const index = () => {
-  return <div>index</div>
-}
+export default Country
 
-export default index
-
-// 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
+// 11. Demonstrate how to handle errors in GraphQL queries  Create a React component that displays error messages when GraphQL requests fail and provides a way for users to retry the request.

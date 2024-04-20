@@ -1,9 +1,5 @@
-import React from 'react'
+import Button from './Button'
 
-const index = () => {
-  return <div>index</div>
-}
+export default Button
 
-export default index
-
-// 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
+// 12. Create a reusable Button component in React that accepts props for different styles (e.g., primary, secondary, danger) and click handlers. Demonstrate how to use this component in a sample application.

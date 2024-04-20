@@ -23,7 +23,7 @@ const Cart = () => {
   }, [])
 
   return (
-    <div className='ques6'>
+    <div className="ques6">
       <button onClick={() => getCart(correctURL)}>Try Using Correct URL</button>
       <button onClick={() => getCart(incorrectURL)}>
         Try Using Incorrect URL

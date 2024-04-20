@@ -1,9 +1,5 @@
-import React from 'react'
+import Ui from './Ui'
 
-const index = () => {
-  return <div>index</div>
-}
+export default Ui
 
-export default index
-
-// 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
+// 10. Develop an HOC named withDataFetching that fetches data from an API and passes it as props to a component. Use this HOC to retrieve and display data in a component.

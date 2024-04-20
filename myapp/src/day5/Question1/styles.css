@@ -3,8 +3,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin: auto;
-    width: 50vw;
+    margin: 0 auto;
+    max-width: 30vw;
     gap: 1rem;
 }
 

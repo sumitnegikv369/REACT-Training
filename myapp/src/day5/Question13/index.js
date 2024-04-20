@@ -1,9 +1,5 @@
-import React from 'react'
+import ModalComponent from './ModalComponent'
 
-const index = () => {
-  return <div>index</div>
-}
+export default ModalComponent
 
-export default index
-
-// 10.Extend the previous assignment to allow users to perform mutations, such as adding, updating, or deleting items. Implement a form and mutation queries to interact with the GraphQL API.
+// 10.Design and implement a Modal component in React. Allow customization of the modal content and provide options to open, close, and toggle the modal. Use this component to display various types of content.

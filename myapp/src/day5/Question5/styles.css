@@ -1,4 +1,4 @@
-.ques6{
+.ques5{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.ques6 div{
+.ques5 div{
     border: 2px solid black;
     border-radius: 8px;
     width: 200px;
@@ -18,15 +18,15 @@
     gap: 1rem;
 }
 
-.ques6 img{
+.ques5 img{
     max-width: 200px;
     height: 150px;
 }
 
-.ques6 h2{
+.ques5 h2{
     font-size: 1.75rem;
 }
 
-.ques6 p{
+.ques5 p{
     font-size: 1rem;
 }
