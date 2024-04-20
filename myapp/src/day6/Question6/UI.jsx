@@ -8,7 +8,8 @@ const UI = () => {
       <Modal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        onOpen={() => setIsOpen(true)}>
+        onOpen={() => setIsOpen(true)}
+      >
         <div>Modal Content</div>
       </Modal>
     </div>

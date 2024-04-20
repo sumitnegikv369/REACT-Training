@@ -1,4 +1,4 @@
-import Assignment6 from "./day6/Assignment6"
+import Assignment6 from './day6/Assignment6'
 const App = () => {
   return (
     <>

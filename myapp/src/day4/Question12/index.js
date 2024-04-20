@@ -1,4 +1,4 @@
-import TableUi from "./TableUi";
+import TableUi from './TableUi'
 
 export default TableUi
 

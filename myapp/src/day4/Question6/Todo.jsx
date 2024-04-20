@@ -4,7 +4,7 @@ const Todo = () => {
   const [tasks, setTasks] = useState([])
   const [value, setValue] = useState('')
   const handleTask = () => {
-    if(value.length>0){
+    if (value.length > 0) {
       const newTasks = [...tasks, value]
       setTasks([...newTasks])
       setValue('')

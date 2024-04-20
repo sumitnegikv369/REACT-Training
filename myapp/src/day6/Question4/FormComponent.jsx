@@ -19,7 +19,8 @@ const FormComponent = () => {
           e.preventDefault()
           handleSubmit()
         }}
-        className="ques4">
+        className="ques4"
+      >
         <input
           data-testid="username"
           type="text"
@@ -53,4 +54,3 @@ const FormComponent = () => {
 }
 
 export default FormComponent
-

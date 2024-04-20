@@ -27,11 +27,11 @@ const Assignment4 = () => {
         <Question2 />
         <Tag assignmentNumber={4} questionNumber={3} />
         <Question3 />
-                <Tag assignmentNumber={4} questionNumber={4} />
+        <Tag assignmentNumber={4} questionNumber={4} />
         <Question4 />
         <Tag assignmentNumber={4} questionNumber={5} />
         <Question5 />
-                <Tag assignmentNumber={4} questionNumber={6} />
+        <Tag assignmentNumber={4} questionNumber={6} />
         <Question6 />
         <Tag assignmentNumber={4} questionNumber={7} />
         <Question7 />
@@ -42,13 +42,13 @@ const Assignment4 = () => {
         <Tag assignmentNumber={4} questionNumber={10} />
         <Question10 />
         <Tag assignmentNumber={4} questionNumber={11} />
-        <Question11 /> 
+        <Question11 />
         <Tag assignmentNumber={4} questionNumber={12} />
-        <Question12 /> 
+        <Question12 />
         <Tag assignmentNumber={4} questionNumber={13} />
-        <Question13 /> 
+        <Question13 />
         <Tag assignmentNumber={4} questionNumber={14} />
-        <Question14 /> 
+        <Question14 />
       </div>
     </>
   )

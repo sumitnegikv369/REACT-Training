@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -8,8 +9,9 @@ const Services = () => {
         <li>Service 2</li>
         <li>Service 3</li>
       </ul>
+      <Link to="/">Back To Home</Link>
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

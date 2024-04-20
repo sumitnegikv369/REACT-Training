@@ -115,3 +115,12 @@
     margin-top: 10px;
   }
   
+  a{
+    color: #333;
+    text-decoration: none;
+    background-color: #3332;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }

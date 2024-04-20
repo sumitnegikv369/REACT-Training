@@ -1,22 +1,22 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './Home'
 import './styles.css'
-import LazyLoadWithFallback from './LazyLoadWithFallback';
-const LazyLoadAbout = LazyLoadWithFallback(()=>import('./About'))
-const LazyLoadServices = LazyLoadWithFallback(()=>import('./Services'))
+import LazyLoadWithFallback from './LazyLoadWithFallback'
+const LazyLoadHome = LazyLoadWithFallback(() => import('./Home'))
+const LazyLoadAbout = LazyLoadWithFallback(() => import('./About'))
+const LazyLoadServices = LazyLoadWithFallback(() => import('./Services'))
 
 // Use network throttling in Chrome DevTools to observe lazy loading in action
 
 const App = () => {
   return (
     <>
-        <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/services' element={<LazyLoadServices/>}/>
-            <Route path='/about' element={<LazyLoadAbout/>}/>
+          <Route path="/" element={<LazyLoadHome />} />
+          <Route path="/services" element={<LazyLoadServices />} />
+          <Route path="/about" element={<LazyLoadAbout />} />
         </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </>
   )
 }
