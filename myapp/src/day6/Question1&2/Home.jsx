@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom' // Import Link for navigation
 
 const Home = () => {
+    throw new Error("error")
+
   function heavy() {
     for (let index = 0; index < 1000000000; index++) {}
   }
@@ -18,6 +20,7 @@ const Home = () => {
         <Link to="/about">About</Link>
       </div>
     </div>
+
   )
 }
 

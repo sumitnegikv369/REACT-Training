@@ -1,29 +1,33 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
 
 const ErrorBoundary = ({ children }) => {
-  const [hasError, setHasError] = useState(false)
+  const [hasError, setHasError] = useState(false);
+
   useEffect(() => {
-    try {
-      // throw new Error('Simulated error: Component failed to load.');
-      // uncomment the above line to observe error boundary use
-    } catch (error) {
-      setHasError(true)
-    }
-  }, [])
+    const errorHandler = () => {
+      setHasError(true);
+      window.document.getElementById('webpack-dev-server-client-overlay').style.display = "none";
+    };
+
+    window.addEventListener('error', errorHandler);
+
+    return () => {
+      window.removeEventListener('error', errorHandler);
+    };
+  }, []); 
 
   if (hasError) {
     return (
       <>
         <div>
           <span>Opps</span>
-          <Link to="/">Back To Home</Link>
         </div>
       </>
-    )
+    );
+  }else{
+    return children;
   }
 
-  return <>{children}</>
-}
+};
 
-export default ErrorBoundary
+export default ErrorBoundary;
