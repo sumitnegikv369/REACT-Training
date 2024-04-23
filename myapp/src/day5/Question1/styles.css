@@ -1,0 +1,14 @@
+.ques1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    max-width: 30vw;
+    gap: 1rem;
+}
+
+.ques1 img{
+    width: 200px;
+    border-radius: 6px;
+}

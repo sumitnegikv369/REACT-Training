@@ -7,14 +7,14 @@ const Assignment6 = () => {
     <div>
       <Tag assignmentNumber={6} questionNumber={'1&2'} />
       <Question1_2 />
-      {/* <Tag assignmentNumber={6} questionNumber={3} />
+      <Tag assignmentNumber={6} questionNumber={3} />
       <Question3 />
       <Tag assignmentNumber={6} questionNumber={4} />
       <Question4 />
       <Tag assignmentNumber={6} questionNumber={5} />
       <Question5 />
       <Tag assignmentNumber={6} questionNumber={6} />
-      <Question6 /> */}
+      <Question6 />
     </div>
   )
 }

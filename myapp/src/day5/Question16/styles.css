@@ -1,0 +1,17 @@
+.ques16{
+    margin: auto;
+}
+
+.ques16 p{
+    background-color: rgb(176, 128, 255);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.ques16 span{
+    margin-left: 1rem;
+}
