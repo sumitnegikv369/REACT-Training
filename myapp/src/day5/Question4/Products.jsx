@@ -12,35 +12,41 @@ const Products = () => {
       const res = await fetch('https://dummyjson.com/products')
       const data = await res.json()
       setProducts(data.products)
-      setCurrentProducts(products.slice(0, productPerPage))
     } catch (error) {
       console.log(error.message)
     }
   }
 
   const nextPage = () => {
-    setCurrentProducts(
-      products.slice(
-        currentPage * productPerPage,
-        currentPage * productPerPage + productPerPage,
-      ),
-    )
-    setCurrentPage(currentPage + 1)
+    if(currentPage<parseInt(products.length/productPerPage)){
+      setCurrentProducts(
+        products.slice(
+          currentPage * productPerPage,
+          currentPage * productPerPage + productPerPage,
+        ),
+      )
+      setCurrentPage(currentPage + 1)
+    }
   }
 
   const prevPage = () => {
-    setCurrentProducts(
-      products.slice(
-        currentPage * productPerPage,
-        currentPage * productPerPage + productPerPage,
-      ),
-    )
-    setCurrentPage(currentPage - 1)
+    console.log(currentPage*productPerPage)
+
+    if(currentPage>1){
+      setCurrentProducts(
+        products.slice(
+          (currentPage -1) * productPerPage,
+         (currentPage -1) * productPerPage + productPerPage,
+        ),
+      )
+    setCurrentPage(prev => prev - 1)
+
+    }
   }
 
   const loadPage = (i) => {
     setCurrentProducts(
-      products.slice(i * productPerPage, i * productPerPage + productPerPage),
+      products.slice((i -1) * productPerPage , i * productPerPage + productPerPage),
     )
     setCurrentPage(i)
   }
@@ -48,6 +54,10 @@ const Products = () => {
   useEffect(() => {
     getProducts()
   }, [])
+
+  useEffect(()=>{
+    setCurrentProducts(products.slice(0, productPerPage))
+  }, [products])
 
   return (
     <div className="ques4">
@@ -57,7 +67,7 @@ const Products = () => {
         <button onClick={nextPage}>next</button>
       </div>
       <div className="pagination">
-        {Array(products.length / productPerPage)
+        {Array(parseInt(products.length / productPerPage))
           .fill(1)
           .map((_, i) => (
             <p

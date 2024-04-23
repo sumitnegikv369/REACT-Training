@@ -18,11 +18,15 @@ const UI = () => {
   const [countriesPerPage] = useState(10)
 
   const nextPage = () => {
-    setCurrentPage(currentPage + 1)
+    if(currentPage<data.countries.length/countriesPerPage){
+      setCurrentPage(currentPage + 1)
+    }
   }
 
   const prevPage = () => {
-    setCurrentPage(currentPage - 1)
+    if(currentPage>1){
+      setCurrentPage(currentPage - 1)
+    }
   }
 
   const loadPage = (i) => {

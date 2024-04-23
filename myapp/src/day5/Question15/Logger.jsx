@@ -1,21 +1,20 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Logger = (WrappedComponent) => {
   const EnhancedComponent = () => {
     const [counter, setCounter] = useState(0)
 
-    const myRef = useRef(false)
 
     useEffect(() => {
-      if (!myRef.current) {
         console.log(`${WrappedComponent.name} mounted`)
-        myRef.current = true
-      } else {
-        console.log(`${WrappedComponent.name} updated`)
-      }
+    }, [])
 
-      return () => console.log(`${WrappedComponent.name} unmount`)
-    })
+    useEffect(()=>{
+      console.log(`${WrappedComponent.name} updated`)
+      if(counter>=5){
+        console.log(`${WrappedComponent.name} unmount`)
+      }
+  })
 
     return (
       <>

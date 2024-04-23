@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './styles.css'
 
 const Gallery = () => {
@@ -15,7 +15,9 @@ const Gallery = () => {
     }
   }
 
-  getPhotos()
+  useEffect(()=>{
+    getPhotos();
+  }, [])
   return (
     <div className="ques1">
       {photos.map((photo) => (

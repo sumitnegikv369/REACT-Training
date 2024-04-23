@@ -5,31 +5,31 @@ import './styles.css'
 const Button = () => {
   const [count, setCount] = useState(0)
 
-  const increasecount = () => {
+  const increaseCount = () => {
     setCount(count + 1)
   }
-  const decreasecount = () => {
+  const decreaseCount = () => {
     setCount(count - 1)
   }
-  const multiplycount = () => {
+  const multiplyCount = () => {
     setCount(count * 2)
   }
   return (
     <div className="ques12">
       <p> {count}</p>
       <ButtonComponent
-        buttonName="Primary(to increase current count by 1)"
-        buttonhandler={increasecount}
+        buttonName="Primary ( to increase current count by 1 )"
+        buttonhandler={increaseCount}
         name="primary"
       />
       <ButtonComponent
-        buttonName="Secondary(to decrease current count by 1)"
-        buttonhandler={decreasecount}
+        buttonName="Secondary ( to decrease current count by 1 )"
+        buttonhandler={decreaseCount}
         name="secondary"
       />
       <ButtonComponent
-        buttonName="Danger(to multiply current count by 2)"
-        buttonhandler={multiplycount}
+        buttonName="Danger ( to multiply current count by 2 )"
+        buttonhandler={multiplyCount}
         name="danger"
       />
     </div>

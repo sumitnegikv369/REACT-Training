@@ -24,8 +24,8 @@ const Assignment5 = () => {
       <h1>Assignment 5</h1>
       <div>
         <Tag assignmentNumber={5} questionNumber={1} />
-        <Question1 />
-        <Tag assignmentNumber={5} questionNumber={2} />
+        <Question4 />
+        {/* <Tag assignmentNumber={5} questionNumber={2} />
         <Question2 />
         <Tag assignmentNumber={5} questionNumber={3} />
         <Question3 />
@@ -57,7 +57,7 @@ const Assignment5 = () => {
         <Question15 />
 
         <Tag assignmentNumber={5} questionNumber={16} />
-        <Question16 />
+        <Question16 /> */}
       </div>
     </>
   )
