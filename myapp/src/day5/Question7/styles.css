@@ -1,0 +1,25 @@
+.ques7{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+
+.ques7 input{
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #3334;
+}
+
+.ques7 input::placeholder{
+    text-transform: capitalize;
+}
+
+.ques7 button{
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #3334;
+    background-color: rgba(0, 154, 0, 0.533);
+    color: white;
+    font-size: 1rem;
+}

@@ -1,0 +1,25 @@
+.ques10{
+    display: flex;
+    margin: 0 auto;
+    max-width: 50vw;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ques10 div{
+    border: 2px solid rgba(0, 0, 0, 0.234);
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ques10 p{
+    font-size: 1.25rem;
+    background-color: rgba(254, 6, 6, 0.434);
+    padding: 1rem;
+    border-radius: 6px;
+    color: white;
+}

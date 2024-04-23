@@ -1,0 +1,27 @@
+.ques12{
+
+}
+
+.ques12 button{
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #3332;
+    background-image: linear-gradient(45deg, #3332, #ddd2);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.ques12 .primary{
+    background-color: green;
+    color: white;
+}
+
+.ques12 .secondary{
+    background-color: blue;
+    color: white;
+}
+
+.ques12 .danger{
+    background-color: red;
+    color: white;
+}

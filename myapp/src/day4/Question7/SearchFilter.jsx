@@ -17,18 +17,18 @@ const SearchFilter = () => {
     const data = await res.json()
     const products = data.products
 
-    setItems([...products]);
+    setItems([...products])
   }
 
   useEffect(() => {
-      fetchData();
+    fetchData()
   }, [])
 
-  useEffect(()=>{
-    if(searchInput.length>0){
-      filterHandler(items);
-    }else{
-      filterHandler([]);
+  useEffect(() => {
+    if (searchInput.length > 0) {
+      filterHandler(items)
+    } else {
+      filterHandler([])
     }
   }, [searchInput])
 
@@ -39,7 +39,7 @@ const SearchFilter = () => {
         value={searchInput}
         placeholder="enter a phone brand"
         onChange={(e) => {
-          setSearchInput(e.target.value);
+          setSearchInput(e.target.value)
         }}
       />
       <ul>

@@ -1,25 +1,25 @@
-import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
-import { useFormik } from "formik";
-import { SignupSchema } from "./SignupSchema";
+import TextField from '@mui/material/TextField'
+import { Button } from '@mui/material'
+import { useFormik } from 'formik'
+import { SignupSchema } from './SignupSchema'
 
 const Validation = () => {
   const initialValues = {
-    UserName: "",
-    Email: "",
-    PhoneNo: "",
-    Password: "",
-    ConfirmPassword: "",
-  };
+    UserName: '',
+    Email: '',
+    PhoneNo: '',
+    Password: '',
+    ConfirmPassword: '',
+  }
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues,
       validationSchema: SignupSchema,
       onSubmit: (values, action) => {
-        console.log(values);
-        action.resetForm();
+        console.log(values)
+        action.resetForm()
       },
-    });
+    })
   return (
     <form onSubmit={handleSubmit}>
       <div>
@@ -96,7 +96,7 @@ const Validation = () => {
         </Button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default Validation;
+export default Validation
